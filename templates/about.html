@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <h1>About AI Cloud Security</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('community') }}">Community</a></li>
+                <li><a href="{{ url_for('admin') }}">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>To provide state-of-the-art AI-driven threat detection solutions for securing cloud networks against evolving cyber threats.</p>
+        </section>
+
+        <section>
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/member1.png') }}" alt="Team Member 1">
+                <h3>Akshitha </h3>
+                <p><strong>CEO & Founder:</strong> Visionary leader with a passion for AI-driven security solutions.</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/member2.jpeg') }}" alt="Team Member 2">
+                <h3>Jay</h3>
+                <p><strong>CTO:</strong> Technical innovator driving advancements in AI and machine learning.</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/member3.png') }}" alt="Team Member 3">
+                <h3>Sonam</h3>
+                <p><strong>Cybersecurity Specialist:</strong> Expert in cloud security architecture and threat mitigation.</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/member3.png') }}" alt="Team Member 3">
+                <h3>Harsh</h3>
+                <p><strong>Cybersecurity Specialist:</strong> Expert in cloud security architecture and threat mitigation.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 AI Cloud Security. All rights reserved.</p>
+    </footer>
+</body>
+</html>

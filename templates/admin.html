@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Vulnerability Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('community') }}">Community</a></li>
+                <li><a href="{{ url_for('admin') }}">Admin</a></li>
+                <li><a href="{{ url_for('admin_signup') }}">Admin Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <center>
+                <h2>Vulnerability Detection</h2>
+                <form action="/admin" method="POST">
+                    <label for="message">Enter Text:</label>
+                    <textarea id="message" name="message" rows="4" cols="30" required></textarea>
+                    <br><br>
+                    <button type="submit">Detect Vulnerability</button>
+                </form>
+                {% if result %}
+                    <h3>{{ result }}</h3>
+                {% endif %}
+            </center>
+        </section>
+        
+        <!-- Admin Signup Section -->
+        <section>
+            <center>
+                <h2>Admin Signup</h2>
+                <form action="{{ url_for('admin_signup') }}" method="POST">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+
+                    <label for="employee_id">Employee ID:</label>
+                    <input type="text" id="employee_id" name="employee_id" required><br><br>
+
+                    <label for="occupation">Occupation:</label>
+                    <select id="occupation" name="occupation" required>
+                        <option value="manager">Manager</option>
+                        <option value="developer">Developer</option>
+                        <option value="HR">HR</option>
+                    </select><br><br>
+
+                    <button type="submit">Create Admin Account</button>
+                </form>
+            </center>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 AI Cloud Security. All rights reserved.</p>
+    </footer>
+</body>
+</html>

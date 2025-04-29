@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+   background:linear-gradient( white,rgb(55, 229, 235));
+    color: #ffffff;
+}
+
+
+header {
+    background: #0073e6;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+main {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(30, 60, 144, 0.8), rgba(30, 96, 145, 0.8)); /* Gradient background for main content */
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #ffffff; /* White text for readability */
+}
+
+
+footer {
+  
+  
+    text-align: center;
+    padding: 10px;
+    background: #0073e6;
+    color: #ffffff;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.feature-icon {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+
+.team-member {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    color: #dddddd; 
+}
+
+
+.contact-info {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.contact-info i {
+    color: #0073e6;
+    margin-right: 10px;
+}
+
+
+.map {
+    margin-top: 40px;
+}
+
+.map iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+form {
+    margin: 20px auto;
+    width: 300px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

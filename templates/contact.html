@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AI-Powered Threat Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <h1>AI-Powered Threat Detection</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('community') }}">Community</a></li>
+                <li><a href="{{ url_for('admin') }}">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Please fill out the form below or reach us at our email for any inquiries.</p>
+
+        <section>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> Phone: +61 43 34 24 662</p>
+                <p><i class="fas fa-envelope"></i> Email: CQU</p>
+                <p><i class="fas fa-map-marker-alt"></i> Ann Street, Brisbane, Queensland</p>
+            </div>
+        </section>
+
+        <form action="/submit_form" method="post">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <section class="map">
+            <h3>Find Us Here</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.057133333613!2d153.02168267477987!3d-27.46748061661036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16c12181e076f7d%3A0x917e909888b32f61!2sCQUniversity%20Brisbane!5e0!3m2!1sen!2sau!4v1734372851014!5m2!1sen!2sau"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AI-Powered Threat Detection - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
